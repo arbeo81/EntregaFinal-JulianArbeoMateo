@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList";
-import styles from "./itemListContainer.scss"
 import {
 	collection,
 	getDocs,
@@ -39,8 +38,8 @@ export const ItemListContainer = ({}) => {
 
 	return (
 		<>
-		<h1 className={styles.title}>Productos: {categoriaId}</h1>
-			<ItemList className={styles.container} data={data} />
+		<h1>Productos: {categoriaId}</h1>
+			<ItemList data={data} />
 			
 		</>
 	);
